@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>express+pg体验接口开发</title>
+</head>
+<body>
+<button>请求数据</button>
+<ul></ul>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+	$('button').on('click',function (e) {
+		$.ajax({
+			type:'get',
+			url:'http://localhost:8081/test',
+			success:function (res) {
+				console.log(res);
+                res.map(item=>{
+                    $('ul').get(0).innerHTML += `<li><span>${item.user}</span>今年<span>${item.age}</span>，有一辆 <span>${item.car}</span></li>`
+                })
+            }
+		})
+    })
+</script>
+</body>
+</html>

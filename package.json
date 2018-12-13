@@ -1,0 +1,23 @@
+{
+  "name": "express-pg",
+  "version": "1.0.0",
+  "description": "使用express和pg体验接口开发",
+  "main": "api-test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YepFury/express-pg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YepFury/express-pg/issues"
+  },
+  "homepage": "https://github.com/YepFury/express-pg#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pg": "^7.7.1"
+  }
+}
